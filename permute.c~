@@ -11,6 +11,7 @@ int main(){
 	int items[] = {  -1, -1, -1};
 	int a1,a2,a3;
 
+		addFlag(a0, items);
 		for(a1 = 0; a1 < 3; a1++){
 			if(isInside(a1, items) == TRUE){ continue;}
 			addFlag(a1, items);
