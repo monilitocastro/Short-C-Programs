@@ -1,4 +1,4 @@
-// Seminit–Semaphore initialization.
+// Monilito Castro HW8
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/sem.h>
