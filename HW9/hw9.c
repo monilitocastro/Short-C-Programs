@@ -24,7 +24,11 @@ int main (int c, char *v[]) {
         }
 	while ((pointerFolderent = readdir(pointerFolder)) != NULL) {
 		if(     strcmp(pointerFolderent->d_name, "..")==0 ||
-		        strcmp(pointerFolderent->d_name, ".")==0){
+		        strcmp(pointerFolderent->d_name, "stdout1.txt")==0 ||
+		        strcmp(pointerFolderent->d_name, "stdout1.txt~")==0 ||
+		        strcmp(pointerFolderent->d_name, "stdout2.txt")==0 ||
+		        strcmp(pointerFolderent->d_name, "stdout2.txt~")==0 ||
+		        strcmp(pointerFolderent->d_name, ".")==0 ) {
 			continue;		
 		}
        	     	fputs(pointerFolderent->d_name, stdout );
